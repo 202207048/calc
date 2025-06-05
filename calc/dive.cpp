@@ -2,5 +2,11 @@
 #include "sub.h"
 
 int dive(int a, int b) {
-	return 0;
+	int count = 0;
+	while (a >= b) {
+		a = sub(a, b);
+		count++;
+	}
+	return count;
+
 }
