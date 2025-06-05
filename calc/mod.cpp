@@ -2,5 +2,8 @@
 #include "sub.h"
 
 int mod(int a, int b) {
-	return 0;
+	while (a >= b) {
+		a = sub(a, b);
+	}
+	return a;
 }
